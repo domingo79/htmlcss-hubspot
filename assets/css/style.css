@@ -18,18 +18,38 @@
     margin: auto;
 }
 
+
 body
 {
     font-family: 'Montserrat', sans-serif;
 }
 .row
 {
-    width: 100%
+    width: 100%;
+    float: left;
+}
+
+.col1
+{
+    width: 75%;
+    float: left;
 }
 
 .col2
 {
     width: calc(100%/2);
+    float: left;
+}
+
+.col3
+{
+    width: calc(100%/3);
+    float: left;
+}
+
+.col4
+{
+    width: calc(100%/4);
     float: left;
 }
 
@@ -65,7 +85,10 @@ body
     font-size: 12px;
 }
 
-
+.fa-check-circle
+{
+    color: #FF7A59;
+}
 
 .bgd .bg_colore_nav1
 {
@@ -81,6 +104,18 @@ body
 {
     background-color: #fff1ee;
 }
+
+.bgd .powerful
+{
+    background-color: #F4F9FD;
+}
+
+.bgd .hub_spot{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
 
 /* ************header************ */
 
@@ -147,4 +182,181 @@ ul > li
     font-weight: 600;
     font-size: 0.7rem;
     padding: 15px;
+}
+
+.powerful
+{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.powerful > p 
+{
+    padding: 25px 350px;
+    font-size: 0.8rem;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.hub_spot > .col4 > .butt_orange, img
+{
+    margin-top: 25px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hub_spot > .col1 > h2
+{
+    text-align: left;
+    margin-top: 3.5rem;
+}
+
+.hub_spot > .col1 >p
+{
+    margin: 2.5rem 0;
+    text-align: justify;
+    padding-right: 10rem;
+    line-height: 1.5rem;
+}
+
+.hub_spot > .col1 > h4
+{
+    text-align: left;
+    margin: 1.5rem 1rem 1.5rem 0;
+}
+
+.hub_spot > .col1 > h4::after
+{
+    content: '';
+    display: inline-block;
+    margin: 0.25rem 4rem;
+    width: 30rem;
+    border-bottom: 1px solid black;
+}
+
+.hub_spot > .col1 > ul
+{
+    text-decoration: none;
+    text-align: left;
+}
+
+.hub_spot > .col1 > ul > li
+{
+    font-weight: 400;
+}
+
+.col_hub_spot
+{
+    background-color: pink;
+}
+
+.hub_marketing > img, .hub_sales > img, .hub_service > img
+{
+    height: 200px;
+}
+
+.hub_marketing, .hub_sales, .hub_service
+{   
+    width: 345px;
+    margin: 3rem 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.hub_sales
+{
+    margin: 3rem 3.2rem;
+}
+
+.hub_marketing >h2, .hub_sales>h2, .hub_service>h2
+{
+    padding: 1rem;
+}
+
+.hub_marketing >p, .hub_sales>p, .hub_service>p
+{
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.hub_marketing >p::after, .hub_sales>p::after, .hub_service>p::after
+{
+    content: '';
+    display: block;
+    border-bottom: 2px solid black;
+    width: 150px;
+    margin: 2rem auto;
+}
+
+.hub_marketing >ol, .hub_sales>ol, .hub_service>ol
+{
+    list-style: none;
+    text-align: left;
+    margin: 3rem 0 1rem 2.5rem;
+}
+
+.hub_marketing >.butt_orange, .hub_sales>.butt_orange, .hub_service>.butt_orange
+{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 1rem; 
+    padding: 12px;
+    font-size: 0.6rem;
+}
+
+.learn_grow
+{
+    background: linear-gradient(#00ABB7, #00AEB4, #00B3AF, #00B6AC );
+    color: white;
+    text-align: center;
+}
+
+.learn_grow > h2
+{
+    padding: 3.5rem 16.5rem;
+}
+
+.learn_grow > p
+{
+    padding: 0 11.5rem;
+
+}
+
+.data_tab > p
+{
+    font-size: 0.6rem;
+}
+.col4{
+    border: 1px solid white;
+}
+
+[class*="mrbod"]
+{
+    margin-top: 2rem;
+    border-top: none;
+}
+.mrbod, #borderno_3
+{
+    border-left: none;
+
+}
+
+#borderno, #borderno_2
+{
+    border-right: none;
+
+}
+
+.down
+{
+    border-bottom: none;
+
+}
+
+
+.growing
+{
+    height: 250px;
+    background: rgb(255, 255, 255);
 }
