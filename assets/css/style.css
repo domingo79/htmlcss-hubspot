@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container
+{
+    width: 75%;
+    margin: auto;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.row
+{
+    width: 100%
+}
+
+.col2
+{
+    width: calc(100%/2);
+    float: left;
+}
+
+.butt_orange
+{
+    background-color: #fe775a;
+    border-radius: 5px;
+    color: white;
+    margin: 2px 3px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.butt_vuoto
+{
+    background-color: white;
+    border: 1px solid #fe775a;
+    border-radius: 5px;
+    color: #fe775a;
+    margin: 2px 3px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.fa-search{
+    color: #0da9c1;
+    margin: 0 15px;
+    font-size: small;
+}
+
+.fa-chevron-down
+{
+    font-size: 12px;
+}
+
+
+
+.bgd .bg_colore_nav1
+{
+    background-color: #F4F9FD;
+}
+
+.bgd .bg_colore_nav2
+{
+    background-color: #ffffff;
+}
+
+.bgd .bg_colore_image
+{
+    background-color: #fff1ee;
+}
+
+/* ************header************ */
+
+nav > .left
+{
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 25px 0;
+    font-weight: 400;
+
+}
+
+nav > .right
+{
+    text-align: right;
+    font-size: 1.25rem;
+    margin: 25px 0;
+    font-weight: 400;
+}
+
+ul > li
+{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 4px;
+    font-weight: 400;
+}
+
+#jumbo
+{ 
+    height: 680px;
+    background-image: url('../img/jumbotron.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+
+}
+
+.jumbo_text
+{
+    text-align: left;
+}
+
+.jumbo_text  h1
+{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 70px 80px 0 0;
+}
+
+.jumbo_text  p
+{   padding: 50px 110px 40px 0;
+    font-size: 0.7rem;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.jumbo_text  p:last-child
+{
+    font-size: 0.6rem;
+}
+.jumbo_text > .butt_orange
+{
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 15px;
+}
