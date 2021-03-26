@@ -489,7 +489,7 @@ ul > li
     display: inline-block;
     margin: 1rem;
 }
-
+/* colonna sinistra *********** */
 .sponsor .pippo > h1
 {
     padding: 2rem 12rem 1rem 0;
@@ -509,7 +509,7 @@ ul > li
     font-size: 0.6rem;
     font-weight: 600;
 }
-
+/* colonna di destra *********** */
 .sponsor .woman > img
 {
     height: 300px;
@@ -518,5 +518,78 @@ ul > li
 .woman
 {
     text-align: end;
+}
 
+/* footer ********************** */
+
+.piedone
+{
+    background: #32495B;
+}
+
+.Connect>h5, .Traffic>h5, .Traking>h5, .Support>h5
+{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.Connect>p, .Traffic>p, .Support>p, .Traking>p
+{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+.Traking > a
+{
+    padding: 10px;
+    background-color: #DADEE0;
+    text-decoration: none;
+    color: #495D6D;
+    font-size: 0.7rem;
+    border-radius: 5px;
+}
+.social
+{  
+    margin-top: 1.5rem;
+}
+.social> li > i
+{
+    color: rgba(255, 255, 255, 0.692);
+    margin: 5px 5px;
+}
+
+.language > ul
+{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.language > ul > li{
+    color: rgba(255, 255, 255, 0.692);
+    margin: 0 1.5rem;
+}
+
+.language
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.692);
+}
+.closed
+{
+    opacity: 0.8;
+}
+
+#policy > h6
+{
+    display: inline;
+    font-size: 16px;
+    margin: 0  1rem;
+    color: rgba(255, 255, 255, 0.788);
+}
+#policy
+{
+    text-align: right;
+    margin-top: 1rem;
 }
