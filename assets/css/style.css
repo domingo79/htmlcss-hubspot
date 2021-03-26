@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* common  rules *****************************/
 .clearfix::after
 {
     content: '';
@@ -21,7 +21,9 @@
 
 body
 {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4F6272;
 }
 .row
 {
@@ -74,6 +76,19 @@ body
     text-decoration: none;
 }
 
+ul > li
+{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4F6272;
+}
+
+
+
+/* icone********************************** */
 .fa-search{
     color: #0da9c1;
     margin: 0 15px;
@@ -90,9 +105,11 @@ body
     color: #FF7A59;
 }
 
+/* colori palet ***************************/
 .bgd .bg_colore_nav1
 {
     background-color: #F4F9FD;
+    border-bottom: 1px solid #4F6272;
 }
 
 .bgd .bg_colore_nav2
@@ -117,41 +134,66 @@ body
 }
 
 
-/* ************header************ */
+/* ************header**********************************************/
 
-nav > .left
+
+/* nav bar top left right  */
+.navTop_left
 {
     text-align: left;
-    font-size: 1.25rem;
-    margin: 25px 0;
-    font-weight: 400;
-
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 60px;
 }
 
-nav > .right
+.navTop_right
 {
     text-align: right;
-    font-size: 1.25rem;
-    margin: 25px 0;
-    font-weight: 400;
-}
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 60px;
 
-ul > li
+}
+.navTop_left > a
 {
-    display: inline-block;
+    color: #4F6272;
+    margin: 0 5px;
     text-decoration: none;
-    margin: 0 4px;
-    font-weight: 400;
+    padding: 0 10px;
 }
 
+.navTop_left a:first-child
+{
+    border-right: 1px solid #4F6272;
+}
+
+/* nav bar botton left right  */
+
+.navBotton_left
+{
+    width: 40%;
+    float: left;
+    text-align: left;
+    line-height: 74px;
+    vertical-align: middle;
+}
+
+.navBotton_right
+{
+    width: 60%;
+    float: left;
+    text-align: right;
+    line-height: 74px;
+}
+
+/* riquadro immagine grande****** */
 #jumbo
 { 
-    height: 680px;
+    height: 650px;
     background-image: url('../img/jumbotron.png');
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
-
+    background-size: cover;
+    position: top;
 }
 
 .jumbo_text
@@ -163,19 +205,19 @@ ul > li
 {
     font-size: 2.5rem;
     font-weight: 800;
-    padding: 70px 80px 0 0;
+    padding: 70px 50px 0 0;
 }
 
 .jumbo_text  p
 {   padding: 50px 110px 40px 0;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 25px;
     font-weight: 400;
 }
 
 .jumbo_text  p:last-child
 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 .jumbo_text > .butt_orange
 {
@@ -183,13 +225,33 @@ ul > li
     font-size: 0.7rem;
     padding: 15px;
 }
+/* barra verde fine header ********/
 
+.close_header
+{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #AFEBE4 0%, #AFEBE4 100%);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black; 
+}
+
+/* powerful prima sezione della main ****** */
+
+
+/* sezione powerful  1/3 */
 .powerful
 {
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 3rem;    
 }
 
+.powerful > h1
+{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+   
 .powerful > p 
 {
     padding: 25px 350px;
@@ -198,12 +260,24 @@ ul > li
     font-weight: 600;
 }
 
-.hub_spot > .col4 > .butt_orange, img
+/* sezione powerful  2/3 */
+
+.hub_spot > div > img
 {
-    margin-top: 25px;
-    padding: 1rem;
-    text-align: center;
+    height: 90px;
+    margin-top: 50px;
+    
 }
+.hub_spot > div > a
+{
+    display: block;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin: 3rem auto;
+    width: 40%;
+}
+
+/* riga orrizzontale di pawerful **** */
 
 .hub_spot > .col1 > h2
 {
@@ -213,7 +287,7 @@ ul > li
 
 .hub_spot > .col1 >p
 {
-    margin: 2.5rem 0;
+    margin: 1.4rem 0;
     text-align: justify;
     padding-right: 10rem;
     line-height: 1.5rem;
@@ -243,8 +317,10 @@ ul > li
 .hub_spot > .col1 > ul > li
 {
     font-weight: 400;
+    margin-right: 1.5rem;
 }
 
+/* sezione powerful colonne **************** */
 .col_hub_spot
 {
     background-color: pink;
@@ -252,7 +328,8 @@ ul > li
 
 .hub_marketing > img, .hub_sales > img, .hub_service > img
 {
-    height: 200px;
+    height: 100px;
+    margin-top: 2rem;
 }
 
 .hub_marketing, .hub_sales, .hub_service
@@ -271,12 +348,22 @@ ul > li
 .hub_marketing >h2, .hub_sales>h2, .hub_service>h2
 {
     padding: 1rem;
+    color: #34485C;
+    font-size: 20px;
 }
 
 .hub_marketing >p, .hub_sales>p, .hub_service>p
 {
     padding: 1rem;
     line-height: 1.5rem;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hub_marketing >h3, .hub_sales>h3, .hub_service>h3
+{
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .hub_marketing >p::after, .hub_sales>p::after, .hub_service>p::after
@@ -295,15 +382,23 @@ ul > li
     margin: 3rem 0 1rem 2.5rem;
 }
 
+.hub_marketing > ol>li, .hub_sales> ol>li, .hub_service> ol>li
+{
+    font-size: 15px;
+}
+
 .hub_marketing >.butt_orange, .hub_sales>.butt_orange, .hub_service>.butt_orange
 {
     display: inline-block;
-    width: 25%;
+    width: 35%;
     text-align: center;
     margin-bottom: 1rem; 
-    padding: 12px;
-    font-size: 0.6rem;
+    padding: 16px;
+    font-size: 0.8rem;
 }
+
+
+/* seconda sezione di main ****************************** */
 
 .learn_grow
 {
@@ -312,48 +407,55 @@ ul > li
     text-align: center;
 }
 
+
 .learn_grow > h2
 {
-    padding: 3.5rem 16.5rem;
+    padding: 2.5rem 20rem 1.5rem;
 }
 
 .learn_grow > p
 {
-    padding: 0 11.5rem;
+    padding: 1rem 11.5rem 3.5rem;
 
+}
+/* parte della pseudotabella*********** */
+
+.data_tab > img
+{
+    height: 25px;
+    margin: 0.8rem auto;
+}
+
+
+.data_tab > h1
+{
+    font-size: 2.5rem;
+    margin: 1rem;
 }
 
 .data_tab > p
 {
-    font-size: 0.6rem;
-}
-.col4{
-    border: 1px solid white;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
 }
 
-[class*="mrbod"]
+.Rtabella
 {
-    margin-top: 2rem;
-    border-top: none;
+    border-right: 1px solid white;
 }
-.mrbod, #borderno_3
+
+.topR_tabella
 {
-    border-left: none;
-
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    margin-bottom: 5rem;
 }
 
-#borderno, #borderno_2
+#riga_tab
 {
-    border-right: none;
-
+    border-top: 1px solid white;
+    margin-bottom: 5rem;
 }
-
-.down
-{
-    border-bottom: none;
-
-}
-
 
 .growing
 {
