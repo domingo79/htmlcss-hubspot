@@ -1,11 +1,11 @@
-*
+/* *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 /* common  rules *****************************/
-.clearfix::after
+/* .clearfix::after
 {
     content: '';
     display: table;
@@ -16,7 +16,7 @@
 {
     width: 75%;
     margin: auto;
-}
+} */
 
 
 body
@@ -25,13 +25,13 @@ body
     font-family: Arial, Helvetica, sans-serif;
     color: #4F6272;
 }
-.row
+/* .row
 {
     width: 100%;
     float: left;
-}
+} */
 
-.col1
+/* .col1
 {
     width: 75%;
     float: left;
@@ -53,9 +53,9 @@ body
 {
     width: calc(100%/4);
     float: left;
-}
+} */
 
-.butt_orange
+/* .butt_orange
 {
     background-color: #fe775a;
     border-radius: 5px;
@@ -75,7 +75,7 @@ body
     margin: 2px 3px;
     padding: 7px;
     text-decoration: none;
-}
+} */
 
 ul > li
 {
@@ -86,8 +86,6 @@ ul > li
     font-weight: 500;
     color: #4F6272;
 }
-
-
 
 /* icone********************************** */
 .fa-search{
@@ -143,7 +141,7 @@ ul > li
 {
     text-align: left;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 60px;
 }
 
@@ -151,10 +149,17 @@ ul > li
 {
     text-align: right;
     font-size: 0.8rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 60px;
-
 }
+
+.navTop_right > .butt_orange
+{
+    padding: 10px;
+}
+
+
+
 .navTop_left > a
 {
     color: #4F6272;
@@ -176,7 +181,11 @@ ul > li
     float: left;
     text-align: left;
     line-height: 74px;
-    vertical-align: middle;
+}
+
+.navBotton_left
+{
+    transform: translate(10px, 10px);
 }
 
 .navBotton_right
@@ -185,6 +194,11 @@ ul > li
     float: left;
     text-align: right;
     line-height: 74px;
+}
+
+.navBotton_right > ul > li
+{
+    font-weight: 600;
 }
 
 /* riquadro immagine grande****** */
@@ -322,10 +336,10 @@ ul > li
 }
 
 /* sezione powerful colonne **************** */
-.col_hub_spot
+/* .col_hub_spot
 {
     background-color: pink;
-}
+} */
 
 .hub_marketing > img, .hub_sales > img, .hub_service > img
 {
@@ -542,15 +556,6 @@ ul > li
     margin: 1rem 0;
 }
 
-.Traking > a
-{
-    padding: 10px;
-    background-color: #DADEE0;
-    text-decoration: none;
-    color: #495D6D;
-    font-size: 0.7rem;
-    border-radius: 5px;
-}
 .social
 {  
     margin-top: 1.5rem;

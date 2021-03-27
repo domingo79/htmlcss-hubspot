@@ -1,0 +1,96 @@
+/* reset margin paddinf box-sizing  ********************/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*/////////////////// reset margin paddinf box-sizing//*/
+
+
+/* REGOLA CLEARFIX  ***********************************/
+.clearfix::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*////////////////////////////// REGOLA CLEARFIX///// */
+
+
+/* CONTAINER CENTRATO 75% *******************************/
+.container
+{
+    width: 75%;
+    margin: auto;
+}
+/*///////////////////////// CONTAINER CENTRATO 75%g///*/
+
+/* CLASSE ROW 100%*************************************** */
+.row
+{
+    width: 100%;
+    float: left;
+}
+/* ///////////////////////////////////////CLASSE ROW 100% */
+
+/* COLONNE 70%,50%,33.33%,25%***************************** */
+.col1
+{
+    width: 75%;
+    float: left;
+}
+
+.col2
+{
+    width: calc(100%/2);
+    float: left;
+}
+
+.col3
+{
+    width: calc(100%/3);
+    float: left;
+}
+
+.col4
+{
+    width: calc(100%/4);
+    float: left;
+}
+/* ///////////////////////////COLONNE 70%,50%,33.33%,25%// */
+
+
+/* BOTTONI*********************************************** */
+.butt_orange
+{
+    background-color: #fe775a;
+    border-radius: 5px;
+    color: white;
+    margin: 2px 3px;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.butt_white
+{
+    background-color: white;
+    border: 1px solid #fe775a;
+    border-radius: 5px;
+    color: #fe775a;
+    margin: 2px 3px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.butt_grey
+{
+    padding: 10px;
+    background-color: #DADEE0;
+    text-decoration: none;
+    color: #495D6D;
+    font-size: 0.7rem;
+    border-radius: 5px;
+}
+/* ////////////////////////////////////////////BOTTONI/// */
