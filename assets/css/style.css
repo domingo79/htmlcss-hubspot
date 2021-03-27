@@ -569,27 +569,33 @@ ul > li
 
 .language > ul > li{
     color: rgba(255, 255, 255, 0.692);
-    margin: 0 1.5rem;
+    margin: 0 .5rem;
 }
 
 .language
 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.692);
 }
-.closed
+.closed, #policy
 {
     opacity: 0.8;
+    margin-top: 2rem;
 }
 
-#policy > h6
+.closed >p
+{
+    margin: 0.5rem 0 2rem;
+    color: #ffffffa6;
+}
+
+#policy > p
 {
     display: inline;
-    font-size: 16px;
+    font-size: .9rem; 
     margin: 0  1rem;
     color: rgba(255, 255, 255, 0.788);
 }
 #policy
 {
     text-align: right;
-    margin-top: 1rem;
 }
