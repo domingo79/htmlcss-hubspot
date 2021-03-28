@@ -1,23 +1,3 @@
-/* *
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-/* common  rules *****************************/
-/* .clearfix::after
-{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.container
-{
-    width: 75%;
-    margin: auto;
-} */
-
 
 body
 {
@@ -25,57 +5,8 @@ body
     font-family: Arial, Helvetica, sans-serif;
     color: #4F6272;
 }
-/* .row
-{
-    width: 100%;
-    float: left;
-} */
 
-/* .col1
-{
-    width: 75%;
-    float: left;
-}
-
-.col2
-{
-    width: calc(100%/2);
-    float: left;
-}
-
-.col3
-{
-    width: calc(100%/3);
-    float: left;
-}
-
-.col4
-{
-    width: calc(100%/4);
-    float: left;
-} */
-
-/* .butt_orange
-{
-    background-color: #fe775a;
-    border-radius: 5px;
-    color: white;
-    margin: 2px 3px;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 0.7rem;
-}
-
-.butt_vuoto
-{
-    background-color: white;
-    border: 1px solid #fe775a;
-    border-radius: 5px;
-    color: #fe775a;
-    margin: 2px 3px;
-    padding: 7px;
-    text-decoration: none;
-} */
+/* proprietà comunni */
 
 ul > li
 {
@@ -104,7 +35,8 @@ ul > li
     color: #FF7A59;
 }
 
-/* colori palet ***************************/
+/* colori background sezioni ***************************/
+
 .bgd .bg_colore_nav1
 {
     background-color: #F4F9FD;
@@ -132,11 +64,28 @@ ul > li
     margin-top: 25px;
 }
 
+.learn_grow
+{
+    background: linear-gradient(#00ABB7, #00AEB4, #00B3AF, #00B6AC );
+    color: white;
+    text-align: center;
+}
 
-/* ************header**********************************************/
+.growing
+{
+    background: rgb(255, 255, 255);
+}
+
+.piedone
+{
+    background: #32495B;
+}
 
 
-/* nav bar top left right  */
+/* ************ H E A D E R ********************************************/
+
+
+/* nav top left ************** */
 .navTop_left
 {
     text-align: left;
@@ -144,21 +93,6 @@ ul > li
     font-weight: 600;
     line-height: 60px;
 }
-
-.navTop_right
-{
-    text-align: right;
-    font-size: 0.8rem;
-    /* font-weight: 600; */
-    line-height: 60px;
-}
-
-.navTop_right > .butt_orange
-{
-    padding: 10px;
-}
-
-
 
 .navTop_left > a
 {
@@ -173,7 +107,20 @@ ul > li
     border-right: 1px solid #4F6272;
 }
 
-/* nav bar botton left right  */
+/* nav top right ********************** */
+.navTop_right
+{
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 60px;
+}
+
+.navTop_right > .butt_orange
+{
+    padding: 10px;
+}
+
+/* nav  botton left **************  */
 
 .navBotton_left
 {
@@ -188,6 +135,8 @@ ul > li
     transform: translate(10px, 10px);
 }
 
+/* nav  botton right **************  */
+
 .navBotton_right
 {
     width: 60%;
@@ -201,7 +150,7 @@ ul > li
     font-weight: 600;
 }
 
-/* riquadro immagine grande****** */
+/* jumbo immagine grande*********** */
 #jumbo
 { 
     height: 650px;
@@ -240,7 +189,7 @@ ul > li
     font-size: 0.7rem;
     padding: 15px;
 }
-/* barra verde fine header ********/
+/* barra verde close header ********/
 
 .close_header
 {
@@ -250,11 +199,14 @@ ul > li
     border-top: 3px solid black;
     border-bottom: 3px solid black; 
 }
+/*///////////////// H E A D E R//////////////////////////////////////*/
 
-/* powerful prima sezione della main ****** */
 
+/* *********** ++* M   A   I   N *++  IN 3 SEZIONI ********************/
 
-/* sezione powerful  1/3 */
+/* sezione powerful  1/3 *************/
+
+/* parte centrale con immagine */
 .powerful
 {
     text-align: center;
@@ -275,15 +227,16 @@ ul > li
     font-weight: 600;
 }
 
-/* sezione powerful  2/3 */
+/* sezione powerful ROW  2/3  ************/
 
-.hub_spot > div > img
+/* colonna sinistra della row  */
+.colunn_sx_hubSpot img
 {
     height: 90px;
     margin-top: 50px;
     
 }
-.hub_spot > div > a
+.colunn_sx_hubSpot a
 {
     display: block;
     padding: 10px;
@@ -292,15 +245,15 @@ ul > li
     width: 40%;
 }
 
-/* riga orrizzontale di pawerful **** */
+/* colonna destra della row **** */
 
-.hub_spot > .col1 > h2
+.colunn_dx_hubSpot h2
 {
     text-align: left;
     margin-top: 3.5rem;
 }
 
-.hub_spot > .col1 >p
+.colunn_dx_hubSpot p
 {
     margin: 1.4rem 0;
     text-align: justify;
@@ -308,13 +261,13 @@ ul > li
     line-height: 1.5rem;
 }
 
-.hub_spot > .col1 > h4
+.colunn_dx_hubSpot h4
 {
     text-align: left;
     margin: 1.5rem 1rem 1.5rem 0;
 }
 
-.hub_spot > .col1 > h4::after
+.colunn_dx_hubSpot h4::after
 {
     content: '';
     display: inline-block;
@@ -323,29 +276,19 @@ ul > li
     border-bottom: 1px solid black;
 }
 
-.hub_spot > .col1 > ul
+.colunn_dx_hubSpot > ul
 {
     text-decoration: none;
     text-align: left;
 }
 
-.hub_spot > .col1 > ul > li
+.colunn_dx_hubSpot > ul > li
 {
     font-weight: 400;
     margin-right: 1.5rem;
 }
 
-/* sezione powerful colonne **************** */
-/* .col_hub_spot
-{
-    background-color: pink;
-} */
-
-.hub_marketing > img, .hub_sales > img, .hub_service > img
-{
-    height: 100px;
-    margin-top: 2rem;
-}
+/* sezione powerful 3 colonne **************** */
 
 .hub_marketing, .hub_sales, .hub_service
 {   
@@ -355,11 +298,17 @@ ul > li
     border-radius: 5px;
 }
 
+/*margine tra le sezioni*/
 .hub_sales
-{
+{ 
     margin: 3rem 3.2rem;
 }
 
+.hub_marketing > img, .hub_sales > img, .hub_service > img
+{
+    height: 100px;
+    margin-top: 2rem;
+}
 .hub_marketing >h2, .hub_sales>h2, .hub_service>h2
 {
     padding: 1rem;
@@ -413,15 +362,7 @@ ul > li
 }
 
 
-/* seconda sezione di main ****************************** */
-
-.learn_grow
-{
-    background: linear-gradient(#00ABB7, #00AEB4, #00B3AF, #00B6AC );
-    color: white;
-    text-align: center;
-}
-
+/* seconda sezione M A I N ****************************** */
 
 .learn_grow > h2
 {
@@ -440,7 +381,6 @@ ul > li
     height: 25px;
     margin: 0.8rem auto;
 }
-
 
 .data_tab > h1
 {
@@ -472,10 +412,7 @@ ul > li
     margin-bottom: 5rem;
 }
 /* terza sezione della main ******************** */
-.growing
-{
-    background: rgb(255, 255, 255);
-}
+
 /* col sinistra  */
 .sponsor > .followers >h1
 {
@@ -534,12 +471,8 @@ ul > li
     text-align: end;
 }
 
-/* footer ********************** */
+/*  ****************F O  O  T  E  R***************** */
 
-.piedone
-{
-    background: #32495B;
-}
 
 .Connect>h5, .Traffic>h5, .Traking>h5, .Support>h5
 {
