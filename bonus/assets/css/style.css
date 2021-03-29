@@ -1,0 +1,739 @@
+
+body
+{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4F6272;
+}
+
+/* proprietà comunni */
+
+ul > li
+{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4F6272;
+}
+
+/* icone********************************** */
+.fa-search{
+    color: #0da9c1;
+    margin: 0 15px;
+    font-size: small;
+}
+
+.fa-chevron-down
+{
+    font-size: 12px;
+}
+
+.fa-check-circle
+{
+    color: #FF7A59;
+}
+
+/* colori background sezioni ***************************/
+
+.bgd .bg_colore_nav1
+{
+    background-color: #F4F9FD;
+    border-bottom: 1px solid #4F6272;
+}
+
+.bgd .bg_colore_nav2
+{
+    background-color: #ffffff;
+}
+
+.bgd .bg_colore_image
+{
+    background-color: #fff1ee;
+}
+
+.bgd .powerful
+{
+    background-color: #F4F9FD;
+}
+
+.bgd .hub_spot{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.learn_grow
+{
+    background: linear-gradient(#00ABB7, #00AEB4, #00B3AF, #00B6AC );
+    color: white;
+    text-align: center;
+}
+
+.growing
+{
+    background: rgb(255, 255, 255);
+}
+
+.piedone
+{
+    background: #32495B;
+}
+/* chat bot ************** */
+
+.robottino
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+/* ************ H E A D E R ********************************************/
+
+
+/* nav top left ************** */
+.navTop_left
+{   
+    /* position: relative; */
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.navTop_left> ul> li> a
+{
+    color: #4F6272;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+#pippo
+{
+    border-right: 1px solid #4F6272;
+}
+
+/* sezione bonus********** */
+.navTop_left ul li ul
+{
+    position: absolute;
+    background: rgba(255,255,255,1);
+    margin-top: 1px;
+    padding: 30px 20px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .5s;
+}
+.navTop_left ul li:hover ul
+{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+}
+.navTop_left ul li ul li:hover
+{
+    border-bottom: 2px solid #FF7A59;
+}
+.navTop_left ul li ul li
+{
+    display: block; 
+}
+.navTop_left ul li ul li a
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* fisso la  nav top */
+.bg_colore_nav1
+{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 2;
+}
+.bg_colore_nav2
+{
+    margin-top: 61px;
+}
+
+/* nav top right ********************** */
+.navTop_right
+{
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 60px;
+}
+
+.navTop_right > .butt_orange
+{
+    padding: 10px;
+}
+
+/* nav  botton left **************  */
+
+.navBotton_left
+{
+    width: 20%;
+    float: left;
+    text-align: left;
+    line-height: 74px;
+}
+
+.navBotton_left
+{
+    transform: translate(10px, 10px);
+}
+
+/* nav  botton right **************  */
+
+.navBotton_right
+{
+    width: 80%;
+    float: left;
+    text-align: right;
+    line-height: 74px;
+}
+
+.navBotton_right > ul > li
+{
+    font-weight: 600;
+}
+
+.navBotton_right ul li a
+{
+    text-decoration: none;
+    color: #4F6272;;
+}
+
+/* b o n u s NAV_botton *******/
+
+/* primo dropdown  */
+.menu_software
+{
+    position: relative;
+}
+
+.drop_down_software
+{
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    background: #f9f9f9;
+    display: none;
+}
+
+.menu_software:hover .drop_down_software
+{
+    display: block;
+    transform: translateY(18px);
+}
+
+.drop_icon
+{
+    width: 10%;
+    float: left;
+    text-align: center;
+    vertical-align: middle;   
+}
+
+.drop_text
+{
+    width: 90%;
+    float: left;
+    text-align: left;
+    font-size: .8rem;
+    line-height: 35px;
+}
+
+.drop_text p
+{
+    margin-bottom: 10px;
+}
+
+.drop_down_software hr
+{
+    width: 90%;
+    margin: auto;
+}
+
+.text_foot_drop
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: .8rem;
+    line-height: 25px;
+}
+
+/* secondo dropdown  */
+.menu_resorces
+{
+    position: relative;
+}
+
+.container_resources
+{
+    width: 720px;
+    position: absolute;
+    top: 20px;
+    right: -160px;
+    background: #f9f9f9;
+    display: none;
+}
+.menu_resorces:hover .container_resources
+{
+    display: block;
+}
+
+.risorse_dropdown
+{
+    width: 240px;
+    float: left;
+}
+.risorse_dropdown h4,p
+{
+    font-size: 0.8rem;
+    line-height: 15px;
+    text-align: left;
+    padding: 15px;
+}
+
+.border_bot_p
+{
+    border-bottom: 1px solid darkgray;
+}
+/* terzo dropdown  */
+
+.menu_about
+{
+    position: relative;
+}
+
+.container_about
+{
+    width: 600px;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    background: #f9f9f9;
+    display: none;
+}
+
+.menu_about:hover .container_about
+{
+    display: block;
+}
+
+.list_about
+{
+    width: 200px;
+    float: left;
+}
+.list_about ol li
+{
+    text-align: center;
+    list-style: none;
+    line-height: 35px;
+}
+
+.list_about ol li p
+{
+    font-size: 0.8;
+    text-align: center;
+}
+/* jumbo immagine grande*********** */
+#jumbo
+{ 
+    height: 650px;
+    background-image: url('../img/jumbotron.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: top;
+}
+
+.jumbo_text
+{
+    text-align: left;
+}
+
+.jumbo_text  h1
+{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 70px 50px 0 0;
+}
+
+.jumbo_text  p
+{   padding: 50px 110px 40px 0;
+    font-size: 0.9rem;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.jumbo_text  p:last-child
+{
+    font-size: 0.7rem;
+}
+.jumbo_text > .butt_orange
+{
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 15px;
+}
+/* barra verde close header ********/
+
+.close_header
+{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #AFEBE4 0%, #AFEBE4 100%);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black; 
+}
+/*///////////////// H E A D E R//////////////////////////////////////*/
+
+
+/* *********** ++* M   A   I   N *++  IN 3 SEZIONI ********************/
+
+/* sezione powerful  1/3 *************/
+
+/* parte centrale con immagine */
+.powerful
+{
+    text-align: center;
+    padding-top: 3rem;    
+}
+
+.powerful > h1
+{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+   
+.powerful > p 
+{
+    padding: 25px 350px;
+    font-size: 0.8rem;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+/* sezione powerful ROW  2/3  ************/
+
+/* colonna sinistra della row  */
+.colunn_sx_hubSpot img
+{
+    height: 90px;
+    margin-top: 50px;
+    
+}
+.colunn_sx_hubSpot a
+{
+    display: block;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin: 3rem auto;
+    width: 40%;
+}
+
+/* colonna destra della row **** */
+
+.colunn_dx_hubSpot h2
+{
+    text-align: left;
+    margin-top: 3.5rem;
+}
+
+.colunn_dx_hubSpot p
+{
+    margin: 1.4rem 0;
+    text-align: justify;
+    padding-right: 10rem;
+    line-height: 1.5rem;
+}
+
+.colunn_dx_hubSpot h4
+{
+    text-align: left;
+    margin: 1.5rem 1rem 1.5rem 0;
+}
+
+.colunn_dx_hubSpot h4::after
+{
+    content: '';
+    display: inline-block;
+    margin: 0.25rem 4rem;
+    width: 30rem;
+    border-bottom: 1px solid black;
+}
+
+.colunn_dx_hubSpot > ul
+{
+    text-decoration: none;
+    text-align: left;
+}
+
+.colunn_dx_hubSpot > ul > li
+{
+    font-weight: 400;
+    margin-right: 1.5rem;
+}
+
+/* sezione powerful 3 colonne **************** */
+
+.hub_marketing, .hub_sales, .hub_service
+{   
+    width: 345px;
+    margin: 3rem 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/*margine tra le sezioni*/
+.hub_sales
+{ 
+    margin: 3rem 3.2rem;
+}
+
+.hub_marketing > img, .hub_sales > img, .hub_service > img
+{
+    height: 100px;
+    margin-top: 2rem;
+}
+.hub_marketing >h2, .hub_sales>h2, .hub_service>h2
+{
+    padding: 1rem;
+    color: #34485C;
+    font-size: 20px;
+}
+
+.hub_marketing >p, .hub_sales>p, .hub_service>p
+{
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hub_marketing >h3, .hub_sales>h3, .hub_service>h3
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hub_marketing >p::after, .hub_sales>p::after, .hub_service>p::after
+{
+    content: '';
+    display: block;
+    border-bottom: 2px solid black;
+    width: 150px;
+    margin: 2rem auto;
+}
+
+.hub_marketing >ol, .hub_sales>ol, .hub_service>ol
+{
+    list-style: none;
+    text-align: left;
+    margin: 3rem 0 1rem 2.5rem;
+}
+
+.hub_marketing > ol>li, .hub_sales> ol>li, .hub_service> ol>li
+{
+    font-size: 15px;
+}
+
+.hub_marketing >.butt_orange, .hub_sales>.butt_orange, .hub_service>.butt_orange
+{
+    display: inline-block;
+    width: 35%;
+    text-align: center;
+    margin-bottom: 1rem; 
+    padding: 16px;
+    font-size: 0.8rem;
+}
+
+
+/* seconda sezione M A I N ****************************** */
+
+.learn_grow > h2
+{
+    padding: 2.5rem 20rem 1.5rem;
+}
+
+.learn_grow > p
+{
+    padding: 1rem 11.5rem 3.5rem;
+
+}
+/* parte della pseudotabella*********** */
+
+.data_tab > img
+{
+    height: 25px;
+    margin: 0.8rem auto;
+}
+
+.data_tab > h1
+{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.data_tab > p
+{
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.Rtabella
+{
+    border-right: 1px solid white;
+}
+
+.topR_tabella
+{
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    margin-bottom: 5rem;
+}
+
+#riga_tab
+{
+    border-top: 1px solid white;
+    margin-bottom: 5rem;
+}
+/* terza sezione della main ******************** */
+
+/* col sinistra  */
+.sponsor > .followers >h1
+{
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 2.5rem;
+}
+
+.sponsor > .followers > p
+{
+    margin-left: 5.2rem;
+    font-weight: 500;
+}
+
+/* col destra  */
+
+.sponsor > .iconSponsor
+{
+    padding: 2rem 9rem;
+}
+
+.sponsor > .iconSponsor > img
+{
+    width: 100px;
+    display: inline-block;
+    margin: 1rem;
+}
+/* colonna sinistra *********** */
+.sponsor .pippo > h1
+{
+    padding: 2rem 12rem 1rem 0;
+    font-weight: 800;
+}
+
+.sponsor .pippo > p
+{
+    line-height: 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1rem 11rem 2.5rem 0;
+}
+    
+.sponsor .pippo > p:last-child
+{
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+/* colonna di destra *********** */
+.sponsor .woman > img
+{
+    height: 300px;
+    display: inline-block;    
+}
+.woman
+{
+    text-align: end;
+}
+
+/*  ****************F O  O  T  E  R***************** */
+
+
+.Connect>h5, .Traffic>h5, .Traking>h5, .Support>h5
+{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.Connect>p, .Traffic>p, .Support>p, .Traking>p
+{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+.social
+{  
+    margin-top: 1.5rem;
+}
+.social> li > i
+{
+    color: rgba(255, 255, 255, 0.692);
+    margin: 5px 5px;
+}
+
+.language > ul
+{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.language > ul > li{
+    color: rgba(255, 255, 255, 0.692);
+    margin: 0 .5rem;
+}
+
+.language
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.692);
+}
+.closed, #policy
+{
+    opacity: 0.8;
+    margin-top: 2rem;
+}
+
+.closed >p
+{
+    margin: 0.5rem 0 2rem;
+    color: #ffffffa6;
+}
+
+#policy > p
+{
+    display: inline;
+    font-size: .9rem; 
+    margin: 0  1rem;
+    color: rgba(255, 255, 255, 0.788);
+}
+#policy
+{
+    text-align: right;
+}
