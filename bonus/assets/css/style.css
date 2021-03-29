@@ -122,23 +122,26 @@ ul > li
 {
     position: absolute;
     background: rgba(255,255,255,1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
     margin-top: 1px;
     padding: 30px 20px;
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden;
+    opacity: 0; */
+    display: none;
     transform: translateY(30px);
     transition: .5s;
 }
 .navTop_left ul li:hover ul
 {
-    visibility: visible;
-    opacity: 1;
+    /* visibility: visible;
+    opacity: 1; */
+    display: block;
     z-index: 1;
     transform: translateY(0);
 }
 .navTop_left ul li ul li:hover
 {
-    border-bottom: 2px solid #FF7A59;
+    border-bottom: 2px solid #184771;
 }
 .navTop_left ul li ul li
 {
@@ -228,15 +231,20 @@ ul > li
     position: absolute;
     top: 0px;
     background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     display: none;
 }
 
 .menu_software:hover .drop_down_software
 {
     display: block;
-    transform: translateY(18px);
+    transform: translateY(15px);
 }
-
+.drop_down_software .drop_text h3:hover
+{
+    /* border-bottom: 1px solid #184771; */
+    background-color: rgba(0,0,98,.2);
+}
 .drop_icon
 {
     width: 10%;
@@ -285,13 +293,18 @@ ul > li
     width: 720px;
     position: absolute;
     top: 20px;
-    right: -160px;
+    right: -370px;
     background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     display: none;
 }
 .menu_resorces:hover .container_resources
 {
     display: block;
+}
+.container_resources .risorse_dropdown h4:hover
+{
+    background: #184774;
 }
 
 .risorse_dropdown
@@ -322,15 +335,21 @@ ul > li
 {
     width: 600px;
     position: absolute;
-    top: 25px;
-    right: 0px;
+    top: 18px;
+    right: -60px;
     background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     display: none;
 }
 
 .menu_about:hover .container_about
 {
     display: block;
+}
+
+.container_about ol li:hover
+{
+    background:  rgba(0, 0, 197, 0.5);
 }
 
 .list_about
