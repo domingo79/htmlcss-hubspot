@@ -82,14 +82,44 @@ ul > li
 }
 /* chat bot ************** */
 
-.robottino
+.chat_robot
 {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 30px;
+    right: 30px;
+    font-size: 35px;
+    padding: 20px;
+    color: #fff;
+    background: #415a77;
+    border-radius: 50%;
+}
+.fa-comment-alt
+{
+    position: relative;
+}
+.chat_robot a
+{
+    color: #fff;
+}
+.contenitore
+{
+    width: 200px;
 }
 
+.robottino
+{
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    right: 40px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
 
+.chat_robot:hover .robottino
+{
+    display: block;
+}
 
 /* ************ H E A D E R ********************************************/
 
